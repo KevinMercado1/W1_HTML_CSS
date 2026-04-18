@@ -3,19 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image" href="nodejs.png" />
-    <link src="stylesheet" href="style.css" />
-
+    <link rel="stylesheet" href="styles.css" />
     <title>Mi Portafolio</title>
   </head>
   <body>
-    <a class="pets" href="mascotas.html">Mascotas</a>
+    <a href="mascotas.html">Mascotas</a>
     <nav>
       <header>
         <h1>Kevin Mercado</h1>
         <!-- Aquí creo una lista para los links de mis proyectos.-->
         <h2>Proyectos</h2>
-        <section id="#proyectos">
+        <section>
           <ul>
             <li>
               <a
@@ -60,15 +58,13 @@
         <section>
           <h3>Contacto</h3>
           <form>
-            <button type="button">
-              <label for="name">Nombre Completo:</label>
-              <input type="text" id="name" name="name" /><br /><br />
-              <label for="address">Dirección:</label>
-              <input type="text" id="address" name="address" /><br /><br />
-              <label for="phone">Numero de Telefono:</label>
-              <input type="number" id="number" name="number" /><br /><br />
-              <input type="submit" value="Submit" />
-            </button>
+            <label for="name">Nombre Completo:</label>
+            <input type="text" id="name" name="name" />
+            <label for="address">Dirección:</label>
+            <input type="text" id="address" name="address" />
+            <label for="phone">Numero de Telefono:</label>
+            <input type="number" id="phone" name="number" />
+            <button type="button">Enviar</button>
           </form>
         </section>
       </header>
