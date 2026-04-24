@@ -10,7 +10,6 @@ header {
 }
 .header-main h1 {
   font-style: italic;
-  background-color: beige;
   text-align: left;
 }
 
@@ -83,20 +82,21 @@ footer {
 
 /* Apartado de Diseño de los animales */
 
-button {
-  background-color: aquamarine;
-  text-decoration: none;
+.color {
+  background-color: skyblue;
 }
 
-h1 {
+.button-return {
+  
+display: inline;  
+}
+
+#pet h1 {
   text-align: start;
   text-align: center;
-  background-color: blue;
+
 }
-.animales h2 {
-  background-color: aqua;
-  justify-content: center;
-}
+
 .animales img {
   justify-content: space-around;
   width: 275px;
@@ -104,33 +104,41 @@ h1 {
 }
 
 .animales {
+
+  width: 80%;
   display: flex;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 8px;
 }
-.div2 {
-  grid-column-start: 2;
-  grid-row-start: 2;
-}
 
-.div3 {
-  grid-column-start: 3;
+.ave {
+  
+  grid-column-start: 1;
   grid-row-start: 1;
 }
-
-.div4 {
-  grid-column-start: 4;
+.perro {
+  grid-column-start: 3;
   grid-row-start: 2;
 }
 
-.div5 {
+.marino1 {
   grid-column-start: 5;
   grid-row-start: 1;
 }
 
-.div6 {
-  grid-column-start: 6;
+.marino2 {
+  grid-column-start: 7;
+  grid-row-start: 2;
+}
+
+.felino {
+  grid-column-start: 9;
+  grid-row-start: 1;
+}
+
+.reptil {
+  grid-column-start: 11;
   grid-row-start: 2;
 }
