@@ -22,24 +22,29 @@ header {
   display: flex;
 }
 
+/* Seccion de Acerca de mí */
+#about-me {
+  background-color: aqua;
+}
+
 #about-me h2 {
   text-align: center;
-  padding: 4%;
-  background-color: blue;
+  padding: 3%;
 }
 
 #about-me p {
-  background-color: bisque;
+  padding: 3%;
   text-align: center;
 }
 
-.project h2 {
-  align-items: center;
+/* Seccion de mis proyectos. */
+#project h2 {
+  justify-content: center;
   display: flex;
   background-color: palevioletred;
 }
 
-.project ul {
+#project ul {
   display: flexbox;
   padding: 3%;
   justify-content: space-around;
@@ -49,31 +54,69 @@ header {
   background-color: brown;
 }
 
-.contact {
+/* seccion de contacto */
+#contact {
+  display: flex;
+  padding-bottom: 100%;
+  display: table-row;
   background-color: cadetblue;
 }
 
 footer {
-  background-color: red;
-  color: white;
+  color: black;
   text-align: center;
 }
 
-.projects{
-padding: 2rem;
-border-radius: 16px;
-box-shadow: 10px solid black;
-text-align: center;
-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+.projects {
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 10px solid black;
+  text-align: center;
 }
 
-.container-project{
+.container-project {
   display: grid;
-  grid-template-columns: repeat(autofit, minmax(280px,fr 1));
-}
-/* Apartado de Diseño de los animales */
-.animales img{
-  width: 675px;
-  height: 454px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 3px;
 }
 
+/* Apartado de Diseño de los animales */
+
+.animales img {
+  justify-content: space-around;
+  width: 275px;
+  height: 300px;
+}
+
+.animales {
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 8px;
+}
+.div2 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.div3 {
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+.div4 {
+  grid-column-start: 4;
+  grid-row-start: 2;
+}
+
+.div5 {
+  grid-column-start: 5;
+  grid-row-start: 1;
+}
+
+.div6 {
+  grid-column-start: 6;
+  grid-row-start: 2;
+}
